@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Barbearia Alura</title>
+		
+		<link rel="stylesheet" href="reset.css"> <!--limpar os espaçamentos desnecessarios do cabeçalho, esse link tem q ficar em cima-->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+			<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!--########################### formulario #############################-->
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome:</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+<!--ao pesquisar no site (mobile input types), o type tem determinada configuração, entao mudamos o type"text" pelo type"email"/"tel/"
+required: campo obrigatorio
+placeholder: modelo pra informar o email
+-->
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+<!--########################### caixa p/ mensagem ######################-->
+				<label for="mensagem">Mensagem:</label>	
+				<textarea cols="68" rows="10" id="mensagem" class="input-padrao" required></textarea><!--caixiinha pra escrever comentarios / cols: 30 largura(aumenta a largura) rows=10(altura)-->
+
+<!--##################### opções de contato ############################-->
+				<fieldset>
+<!--em um formulario pra termos titulos inves de <div> usaremos <fildset>-->					
+					<legend style="color: purple"> Como prefere o nosso contato?</legend>
+<!--legend: titulo do formulario-->
+					
+					<label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					<!--opcoes de contatos-->
+
+					<!--criar o campo selecionar: radio: botao pra selecionar / value: valor do input / name: faz com que clica em 1 unico botao. -->
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label><!-- label: visual da pagina / for: liga o id do input. -->
+					
+
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+<!--checked: o watz vai ser o primeiro a ser marcado-->	
+				</fildset>
+
+<!--##################### seletor ############################-->	
+
+						
+				<p class="horario-atendimento">Qual horário prefere nosso atendimento?</p>
+
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>			
+
+				<label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por email?</label>	
+
+				<input type="submit" name="contato" value="Enviar formulário" class="enviar">
+			</form>
+<!--##################### tabela ############################-->
+			<table class>
+				<thead><!--titulo da batela-->
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody><!--corpo da tabela-->
+					<tr>
+						<td>Segunda   </td>
+						<td>8h as 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h as 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h as 20h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+<!--adicionando o <meta> pro site abrir em celulares-->
+		<meta name="viewport" content="width=device-width">
+		<title>Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+<!--importanto fonte: google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--quando for criar o contato.html(2 modulo): tem q editar o href.
+o href atual: <link rel="stylesheet" href="style.css">
+	será modificado no (index.html) pro: <link rel="stylesheet" href="style-home.css">
+	e modificado no (produtos.html) pro: <link rel="stylesheet" href="style.css"-->
+
+<!-- no 4 modulo:
+ ao criar o cabeçalho e rodapé do index.html(4 modulo), precisa modificar o href.
+o href atual: <link rel="stylesheet" href="style-home.css">
+	será modificado no index.html pro:  <link rel="stylesheet" href="reset.css"> e
+										<link rel="stylesheet" href="style.css">-->
+		<style>
+			
+		</style>
+	</head>
+
+	<body>
+<!-- no 4 modulo:
+substituiremos o header no index.html header atual:
+	<header>
+		<h1 class="titulo-principal">Barbearia Alura</h1>
+	</header>
+
+ 	será modificado pelo header de produtos.html:-->
+		<header>
+			<div class="caixa">
+			<h1><img src="logo.png"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<img class="banner" src="banner.jpg">
+
+<!--no 4 modulo:
+adicionamos uma tag: <main> dentro das <div>:divisao visual
+depois: modificamos a <div>
+	pra: <section>: mesmo conteudo e semantica--> 
+
+		<main>
+			<section class="principal">
+<!-- no 4 modulo:
+foi alteraodo a class :<h2 class="titulo-centralizado">
+	pra: <h2 class="titulo-principal"> -->
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+<!--obs:
+	o alt serve pra algum usuario que tem baixa visao ver essa imagem atraves da descrição textual-->
+				<img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro">
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</p></em>
+
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			</section>
+
+<!--no 4 modulo:
+	adicionando o google maps no site-->
+			<section class="mapa">
+				<h3 class="titulo-principal">Nosso Estabelecimento</h3>
+				<p>Nosso estabelecimento está localizado no coração da cidade</p>
+<!-- no 4 modulo:
+	1 entra no google maps 
+	2 digita a busca
+	3 clica nos 3 pontinhos, clica no "compartilhar ou incorporar mapa"
+	4 clica em: incorporar mapa, copia HTML e cola:-->
+
+<!--foi modificado o tamanho e largura do mapa de width: 600 para 100% / e
+	height=400 para 300.-->
+				<div class="mapa-conteudo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58516.10212855676!2d-46.69223955211394!3d-23.559233731152908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salura%20sao%20paulo!5e0!3m2!1spt-BR!2sbr!4v1642443701231!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				
+			</section>
+
+			<section class="beneficios">
+<!-- no 4 modulo foi alteraodo a class :<h3 class="titulo-centralizado">
+	pra: <h3 class="titulo-principal"> -->
+				<h3 class="titulo-principal">Benefícios</h3>
+<!-- no 4 modulo:
+	adicionamos uma <div> e class no conteudo-beneficios e
+		adicionamos uma class para ul: lista-beneficios-->
+
+				<div class="conteudo-beneficios">
+					<ul class="lista-beneficios">			
+						<li class="itens">Atendimento aos Clientes</li>
+						<li class="itens">Espaço diferenciado</li>
+						<li class="itens">Localização</li>
+						<li class="itens">Profissionais Qualificados</li>
+						<li class="itens">Pontualidade</li>
+						<li class="itens">Limpeza</li>
+					</ul><img src="beneficios.jpg" class="imagembeneficios">
+
+<!--no 4 modulo:
+	criamos uma <div> e class pro video -->
+			<div class="video">
+<!-- no 4 modulo:
+	adicionando video do you tube: 
+	1 entra no you tube; 
+	2 clica em compartilhar;
+	3 clica em incorporar;
+	4 copia e cola:"-->
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			</section>
+
+		</main>
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,338 @@
+body { 						/*importando a gonte pelo site google fonts*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*############################# cabeçalho #####################*/
+header {
+	background: #BBBBBB
+}
+
+.caixa {
+	position: relative;
+	width: 940px; 			/*div tamanho fixo - padrao*/
+	margin: 0 auto;			/*margem da caixa: cima - baixo*/;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+
+}
+nav li { 					/*edição do item*/
+	display: inline; 		/*colocar horizontal, home, produtos e contatos*/
+	margin: 0 0 0 15px; 	/*aumentar o espaçamento externo entre o Home/Produtos/Contatos ----- 
+							topo - direita - baixo - esquerda */
+}
+
+nav a {
+	text-transform: uppercase; /*colocar o home, produtos e contatos em maiusculo */
+	color: black; 				/* letra em negrito*/
+	font-weight: bold; 			/*fonte em negrito*/
+	font-size: 22px; 			/*tamanho da fonte*/
+	text-decoration: none;		/*tirar o sublinhado(tirar decoracao)*/
+}
+
+nav a:hover {
+	color: blue;
+	text-decoration: underline; 	/*sublinhado*/
+}
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 40px 0; 			/*cima e baixo - esquerda e direita*/
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	/*background: #CCCCCC; - somente pra visualizar os espaçamentos da borda*/
+	vertical-align: top; 		/*alinhar pela linha de cima*/
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid black; 	/*border: espessura - tipo - cor*/;
+	border-radius: 10px; 		/*arredondar os cantos da borda*/
+}
+
+.produtos li:hover {			/*:hover: quando o mouse estiver por cima */;
+	border-color: blue;
+}
+
+.produtos li:active {			/*quando o mouse clicar muda a cor da borda*/
+	border-color: green;
+}
+
+.produtos li:hover h2 {/*quando o mouse passar em cima do elemento, muda o tamanho da fonte*/
+	font-size: 27px;
+}
+.produtos h2 {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-weight: bold;
+	font-size: 19px;
+	margin: 10px 0 0;		/*espaçamento entre a descrição e o preço*/
+	
+}
+
+/*############################# rodapé #####################*/
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: white;
+	font-size: 13px;
+	padding: 25px 0;
+}
+
+/*############################# contato #####################*/
+
+main {
+							/*no 4 modulo quando for fazer o degrade da pagina,
+							tem que recortar o width e a margin do main e colar no
+							colar no .principal*/
+							
+}
+
+form {
+	margin: 25px 100px 0;			/*espaço no fim do cabeçalho e inicio rodape*/
+}
+
+form label, form legend { 		/*dados*/
+	display: block; 			/*um abaixo do outro*/
+	font-size: 20px;
+	margin: 0 0 10px;			/*margem entre o dado e o retangulo*/
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+
+.horario-atendimento {
+	margin: 20px 0
+}
+
+ .checkbox {
+ 	margin: 15px 0;
+ }
+
+ .enviar {
+ 	width: 40%;
+ 	padding: 15px 0;
+ 	background: orange;
+ 	font-size: 18px;
+ 	font-weight: bold;				/*negrito*/
+ 	border: none;
+ 	border-radius: 5px; 			/*borda do botao*/
+ 	transition: 1s background; 		/*demora 1s pra ao colocar o mouse em cima do
+ 									botao ele reconhece a outra cor;*/
+
+ }
+
+ .enviar:hover {
+ 	background: darkorange;
+ 	transform: scale(1.2);
+ }
+
+ table {
+ 	margin: 20px 0 40px;
+ 	
+ }
+
+ thead {
+ 	background: #555555;
+ 	color: white;
+ 	font-weight: bold;
+ }
+
+ td, th {
+ 	border: 1px solid black;
+ 	padding: 8px 15px;
+ }
+
+
+/* ############################## 4 modulo ################################*/
+
+ .banner {
+ 	width: 100%;
+ }
+
+ .titulo-principal {
+ 	text-align: center;
+ 	font-size: 2em;				/* em o dobro da fonte base*/
+ 	font-weight: bold;
+ 	margin: 0 0 1em;
+ 	padding: 10px;
+ 	clear: left; 	/*limpar o float*/
+ }
+/*############################# LEMBRETE OPACIDADE ##########################*/
+
+/* opacidade da cor em rgb(0,0,0) - cor preta
+ficaria: rgba(0,0,0,0.3); - preta opaca*/ 
+
+/*.titulo-principal:before { 	adicionar um colchete antes do texto
+	content: "[ ";
+}
+.titulo-principal:after { 	adicionar o colchete depois do texto
+	content: " ]";
+}
+*/
+
+
+
+/*############################# LEMBRETE SOMBRAS ##########################*/
+
+/*
+Sombras atras do elemento:
+box-shadow: x y cor;
+exemplo: box-shadow: 10px 10px 5px 20px black, -10px -10px yellow, -20px 20px;
+rgba(255,0,0,0.5): 
+box-shadow: inset 0 0 30px:; red sombra em uma caixa
+SOMBRA PRO TEXTO: 
+text--shadow: 2px 2px red;*/
+
+
+
+.principal {				/*degrade da pagina*/
+	padding: 3em 0;
+	background: #FEFEFE;	/*1 cor do degrade da pagina*/
+	width: 940px;
+	margin: 0 auto;	
+}
+
+ .principal p {
+ 	margin: 0 0 1em;
+ }
+
+ .principal strong {
+ 	font-weight: bold;
+ }
+
+ .principal em {
+ 	font-style: italic;
+ }
+
+ .beneficios {
+ 	padding: 3em 0;
+ 	background: #888888;		/* 2 cor do degrade da pagina*/
+ 	 	
+ }
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top; 			/*centralizado pela parte de cima*/
+}
+	
+/*############################ itens beneficios ############################*/
+
+.itens {
+	line-height: 1.5; 		/* altura da linha*/
+}
+
+.itens:first-child { 		/* ######## primeiro item em negrito #########*/
+	font-weight: bold;		/* 	first-child: primeiro;
+								last-child: ultimo;
+								nth-child(4): o 4 elemento marcado;
+								nth-child(2n): os elementos pares marcado; */
+}
+ 
+ .itens:before {
+ 	content: "✭ ";
+ }
+
+ .imagembeneficios {
+ 	width: 60%;
+ 	opacity: 1;
+ 	transition: : 400ms;
+ 	box-shadow: 10px 10px 10px black;
+ 	border-radius: 10px;
+ }
+
+ .imagembeneficios:hover {
+ 	opacity: 0.3;
+ }
+
+ .utensilios {
+ 	width: 120px;
+ 	float: left; 				/*deixar a imagem do lado do texto*/
+ 	margin: 0 20px 20px 0; 		/* espaço entre a imagem(utensilios) e o texto*/
+ }
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE,#888888) /*degrade cores
+												 90deg:
+												 radial-gradiente: cor em redondo; */
+}
+
+	
+.mapa-conteudo { 			/* criado pra fazer o degrade na pagina*/
+	width: 940px;			/* criado pra fazer o degrade na pagina*/
+	margin: 0 auto;			/* criado pra fazer o degrade na pagina*/
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;	
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+
+/* comando pro site abrir em celulares - incompleto*/
+
+@media screen and (max-width: 700px) {
+	.caixa, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+
+/*#################### LEMBRETE #######################*/
+
+/*main > p {  /*filho direto da <main>: selecionar somente o <p> depois da <main>*/
+ 
+/*img + p { /*o primeiro paragrafo <p>, que vem depois da imagem <img>*/
+ 
+
+ /*img ~ p{ /*selecionar todos os seletores <p> depois da imagem <img> */
+ 
+
+/*.principal p:not(#missao) { /* selecionar os paragrafos que nao sao a missao*/ 
+	
+
