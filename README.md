@@ -19,6 +19,9 @@ Foram usadas para o projeto as seguintes ferramentas:
 <li>VS CODE</li>
 <p></p>
 
+<h1 style='font-size: 18px;'> 📋 Preview </h1>
+<img src="prlx.png" width=20%>
+
 <h1 style='font-size: 18px;'>✒️ Autores</h1>
 <li> Prof. Pedro;</li>
 <li> Curso Alura;</li>
