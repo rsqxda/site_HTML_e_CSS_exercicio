@@ -1,4 +1,4 @@
-<h1 style='font-size: 30px'> Exercicio - Desenvolvimento Web - CSS e HTML5 </h1>
+<h1 style='font-size: 30px'> Desenvolvimento Web - CSS e HTML5 </h1>
     Nesse projeto/treinamento foi criado um site de serviços de barbearia, ultilizando CSS e HTML5.
 <p></p>
 <h1 style='font-size: 20px;'>🚀 Começando </h1>
