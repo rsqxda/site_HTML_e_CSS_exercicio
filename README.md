@@ -20,7 +20,7 @@ Foram usadas para o projeto as seguintes ferramentas:
 <p></p>
 
 <h1 style='font-size: 18px;'> 📋 Preview </h1>
-<img src="edit.png" width=20%> <img src="prlx2.png" width=20%> <img src="prlx3.png" width=20%>
+<p><img src="prlx.png" width=20% align=lefth> <img src="prlx2.png" width=20% align=top> <img src="prlx3.png" width=20% align=top></p>
 
 <h1 style='font-size: 18px;'>✒️ Autores</h1>
 <li> Prof. Pedro;</li>
