@@ -28,3 +28,7 @@ Foram usadas para o projeto as seguintes ferramentas:
 <p></p>
 <h1 style='font-size: 20px;'>🎁 Gratidão 🙏</h1>
 <li> Grata ao Prof. Pedro, que favoreceu meu aprendizado na área de programação, mais específico no Front-end 📢</li>
+
+
+<h2>Link do Projeto: <h2>
+    https://symphonious-otter-dde006.netlify.app
